@@ -22,9 +22,9 @@ Lo schema modificato di codifica da implementare è il seguente:
 -   se l’indirizzo da trasmettere (ADDR) appartiene ad una Working Zone, il bit addizionale
     WZ_BIT è posto a 1, mentre i bit di indirizzo vengono divisi in 2 sotto campi
     rappresentanti:
-    ○ Il numero della working-zone al quale l’indirizzo appartiene WZ_NUM, che sarà
+    - Il numero della working-zone al quale l’indirizzo appartiene WZ_NUM, che sarà
     codificato in binario
-    ○ L’offset rispetto all’indirizzo di base della working zone WZ_OFFSET,
+    - L’offset rispetto all’indirizzo di base della working zone WZ_OFFSET,
     codificato come one-hot (cioè il valore da rappresentare è equivalente all’unico
     bit a 1 della codifica).
     In pratica dato ADDR, verrà trasmesso WZ_BIT=1 concatenato ad WZ_NUM e
